@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Node Sketch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <h1>Node Illustrator</h1>
+      <div class="ui-container">
+        <div class="file-input-container">
+          <input type="file" id="imageInput" accept="image/*" class="file-input">
+          <label for="imageInput" class="file-label">🖼️</label>
+        </div>
+
+        <button id="colorSwitch" class="color-switch color-switch--black">⚪️</button>
+        <button id="saveButton" class="button button--save">💾</button>
+      </div>
+    </div>
+    <div id="canvas-container"></div>
+    <dl class="controls">
+      <h3>Controls</h3>
+      <br>
+      <dt>Create New Node:</dt>
+      <dd>Left-click on an empty area.</dd>
+
+      <dt>Delete Node:</dt>
+      <dd>Right-click on a node.</dd>
+
+      <dt>Drag Node:</dt>
+      <dd>Left-click and drag a node.</dd>
+
+      <dt>Toggle Node Color:</dt>
+      <dd>Double-click on a node.</dd>
+
+      <dt>Resize Node:</dt>
+      <dd>
+          Click on a node and press `+` to increase size.<br>
+          Click on a node and press `-` to decrease size.<br>
+          Click on a node and press `*` to double size.<br>
+          Click on a node and press `/` to halve size.
+      </dd>
+
+      <dt>Create Connection:</dt>
+      <dd>Ctrl + left-click on a node, then on another node.</dd>
+
+      <dt>Switch Line Color:</dt>
+      <dd>Click "Switch to Black" or "Switch to White" button.</dd>
+
+      <dt>Save Image:</dt>
+      <dd>Click "Save" button.</dd>
+
+      <dt>Upload Image:</dt>
+      <dd>Select an image file using the file input.</dd>
+  </dl>
+
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>
